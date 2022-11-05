@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Hash map implementation",
+  "main": "hashmap.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcin-kupiec/mentoring-js.git"
+  },
+  "author": "Marcin Kupiec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcin-kupiec/mentoring-js/issues"
+  },
+  "homepage": "https://github.com/marcin-kupiec/mentoring-js#readme",
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  }
+}

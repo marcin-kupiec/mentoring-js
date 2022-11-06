@@ -13,13 +13,12 @@ class Stack {
       return;
     }
 
-    this.top.setNext(node);
     node.setPrev(this.top);
     this.top = node;
     this.size++;
   }
 
-  pop(data) {
+  pop() {
     if (!this.size) {
       return null;
     }
@@ -39,20 +38,11 @@ class Stack {
 class Node {
   constructor(data) {
     this.data = data;
-    this.next = null;
     this.prev = null;
   }
 
   getData() {
     return this.data;
-  }
-
-  getNext() {
-    return this.next;
-  }
-
-  setNext(node) {
-    this.next = node;
   }
 
   getPrev() {

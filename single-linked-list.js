@@ -69,7 +69,7 @@ class Node {
   // sets reference to the next node of the list
   setNext(node) {
     //is this a place to do the check or casting to the proper type to check if we have reference?
-    node.
+    this.next = node.next;
   }
 }
 

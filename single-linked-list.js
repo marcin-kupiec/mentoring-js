@@ -16,7 +16,7 @@ class SLinkedList {
   append(data) {
     
     if(!head) {
-      this.head = new Node(data);
+      this.head = new Node(data); //jak się dostać do node'a listy?
       //end now should point on the new node created
     }
     let node = new Node(data);
@@ -27,13 +27,31 @@ class SLinkedList {
 
   }
 
+  sizeOf() {
+    let size = 0;
+   // while(true)
+    return size;
+  }
   // addAt function takes two parameters:
   //  * id: type integer (index where to insert new data)
   //  * data: type any
   // returns nothing
   // adds new data at the specified position of the linked list
   // throws error if id is bigger than list size
-  addAt(id, data) {}
+  addAt(id, data) {
+    let node = new Node(data);
+
+    if (id == 0) {
+      node.next = this.head;
+      this.head = node;
+      
+    } else if (id<this.sizeOf()){
+
+    } else {
+
+    }
+
+  }
 
   // get function takes one parameter:
   //  * id: type integer
